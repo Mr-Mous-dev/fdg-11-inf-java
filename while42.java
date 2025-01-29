@@ -1,12 +1,10 @@
 import java.util.Scanner;
-
 public class while42 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Wie viel Geld?");
         double Einwurf = input.nextDouble();
         input.close();
-
         double Fahrtkosten = 12.6;
         double Restgeld = Einwurf - Fahrtkosten;
 
@@ -14,12 +12,10 @@ public class while42 {
             System.out.println("Nicht genug Geld eingeworfen!");
             return;
         }
-
         if (Restgeld > 9.99) {
             System.out.println("Zu viel!");
             return;
         }
-
         int Anzahl2 = 0;
         int Anzahl1 = 0;
         int Anzahl050 = 0;
@@ -28,7 +24,6 @@ public class while42 {
         int Anzahl005 = 0;
         int Anzahl002 = 0;
         int Anzahl001 = 0;
-
         while (Restgeld > 0) {
             if (Restgeld >= 2) {
                 Anzahl2 = (int) (Restgeld / 2);
@@ -57,7 +52,6 @@ public class while42 {
             }
             Restgeld = Math.round(Restgeld * 100.0) / 100.0; 
         }
-
         System.out.println(Anzahl2 + "x 2€, " +
                 Anzahl1 + "x 1€, " +
                 Anzahl050 + "x 50 Cent, " +

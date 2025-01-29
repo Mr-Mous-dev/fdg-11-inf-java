@@ -12,11 +12,11 @@ public class whileZusatz {
         int zaehler = 0;
 
         while (zaehler < anzahl) {
-            int a = random.nextInt(50) + 1;
-            int b = random.nextInt(50) + 1;
-            int ergebnis = a + b;
+            int randomazahl1 = random.nextInt(50) + 1;
+            int randomazahl2 = random.nextInt(50) + 1;
+            int ergebnis = randomazahl1 + randomazahl2;
 
-            System.out.print(a + " + " + b + " = ");
+            System.out.print(randomazahl1 + " + " + randomazahl2 + " = ");
             int antwort = scanner.nextInt();
 
             if (antwort == ergebnis) {
